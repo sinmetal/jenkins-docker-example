@@ -7,6 +7,7 @@ docker run \
     -e JENKINS_JNLP_PORT=10080 \
     -v /opt/example-jenkins/logs:/jenkins/logs \
     -v /opt/example-jenkins/home:/jenkins/home \
+    -v /opt/example-jenkins/var/lib/jenkins:/var/lib/jenkins \
     -d \
     knjname/jenkins-master
 
